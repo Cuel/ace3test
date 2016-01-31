@@ -1,0 +1,33 @@
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: floralwhite;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0, 1);
+    color: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+#menu {
+  overflow-y: scroll;
+}
+
+#wrapper {
+  margin-left: 15rem;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#content {
+  min-height: 50%;
+}
+
+.full-height {
+  height: 100%;
+}
