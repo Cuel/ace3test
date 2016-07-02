@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit SQM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="app.css" charset="utf-8">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="ui segment container">
+        <h1 class="ui dividing centered header">SQM Edit</h1>
+        <div id="menu" class="ui tabular three item inverted menu">
+          <a class="active item" data-tab="tab-input">Input</a>
+          <a class="item" data-tab="tab-edit">Edit</a>
+          <a class="item" data-tab="tab-output">Output</a>
+        </div>
+
+        <div class="ui tab" data-tab="tab-input">
+          <div class="ui segment">
+            <button id="input-file" type="button" class="ui primary button">Select file</button>
+            <h4>Or paste the .SQM</h4>
+            <textarea id="input-text" rows="20"></textarea>
+          </div>
+        </div>
+
+        <div class="ui active tab" data-tab="tab-edit">
+          <div class="ui inverted segment">
+            <sqm-root></sqm-root>
+          </div>
+        </div>
+
+        <div class="ui tab" data-tab="tab-output"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.3.13/riot+compiler.min.js"></script>>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+    <script type="riot/tag" src="root.tag"></script>
+    <script type="riot/tag" src="list.tag"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

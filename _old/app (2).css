@@ -1,0 +1,20 @@
+body, #wrapper {
+  height: 100%;
+}
+#wrapper > .container {
+  height: 95%;
+}
+
+#wrapper {
+  padding-top: 5em;
+}
+
+#input-text {
+  width: 100%;
+  height: auto;
+  resize: vertical;
+}
+
+#output .ui .input {
+  width: 100%;
+}

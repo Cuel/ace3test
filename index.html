@@ -1,79 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>Edit SQM</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="app.css" charset="utf-8">
+    <title>ACE3 search</title>
+    <link rel="stylesheet" href="app.css" charset="utf-8">
   </head>
   <body>
-    <div id="wrapper">
-      <div class="ui segment container">
-        <h1 class="ui dividing centered header">SQM Edit</h1>
-        <div id="menu" class="ui tabular three item inverted menu">
-          <a class="active item" data-tab="tab-input">Input</a>
-          <a class="item" data-tab="tab-edit">Edit</a>
-          <a class="item" data-tab="tab-output">Output</a>
-        </div>
-
-        <div class="ui tab" data-tab="tab-input">
-          <div class="ui segment">
-            <button id="input-file" type="button" class="ui primary button">Select file</button>
-            <h4>Or paste the .SQM</h4>
-            <textarea id="input-text" rows="20"></textarea>
-          </div>
-        </div>
-
-        <div class="ui active tab" data-tab="tab-edit">
-          <div class="ui segment" id="output">
-            <div class="ui middle aligned celled list" v-for="(k, v) in sqm">
-              <div class="item">
-                <div class="content">
-                  <div class="ui accordion">
-                    <div class="title">
-                      <i class="dropdown icon"></i>
-                      <span>{{k}}</span>
-                    </div>
-                    <div class="content">
-                      <p>{{v}}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="ui tab" data-tab="tab-output">
-
-        </div>
-      </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
+    <header>
+      <h2>ace3 search</h2>
+      <input type="text">
+    </header>
+    <h1>hey</h1>
     <script src="app.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      new Vue({
-        el: '#output',
-        data: {
-          sqm: window.mock
-        }
-      })
-    </script>
   </body>
 </html>
-
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js" charset="utf-8"></script>
-<div id="menu" class="ui vertical sidebar menu"></div>
-    <div class="ui top fixed inverted menu">
-        <div class="ui title item launch button">Menu</div>
-        <div class="right item">
-          <span>ACE3 Functions</span>
-        </div>
-    </div>
--->
