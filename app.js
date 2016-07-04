@@ -73,6 +73,6 @@
     var target = document.querySelector('#fncDisplay')
     target.innerHTML = ''
     target.appendChild(document.createTextNode(chosen.text.trim()))
-    window.hljs.initHighlighting()
+    window.hljs.highlightBlock(target)
   }
 })()
